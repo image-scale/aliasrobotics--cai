@@ -31,6 +31,7 @@ from .items import (
     ToolCallItem,
     ToolCallOutputItem,
 )
+from .model import Model, ModelProvider, ModelTracing
 from .model_settings import ModelSettings
 from .run_context import RunContext, TContext
 from .tool import FunctionTool, function_tool
@@ -69,4 +70,7 @@ __all__ = [
     "OutputGuardrailResult",
     "input_guardrail",
     "output_guardrail",
+    "Model",
+    "ModelProvider",
+    "ModelTracing",
 ]
