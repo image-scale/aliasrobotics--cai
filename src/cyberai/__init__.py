@@ -34,6 +34,7 @@ from .items import (
 from .model import Model, ModelProvider, ModelTracing
 from .model_settings import ModelSettings
 from .run_context import RunContext, TContext
+from .run_result import RunConfig, RunResult
 from .tool import FunctionTool, function_tool
 from .usage import Usage
 
@@ -73,4 +74,6 @@ __all__ = [
     "Model",
     "ModelProvider",
     "ModelTracing",
+    "RunConfig",
+    "RunResult",
 ]
