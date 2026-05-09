@@ -12,6 +12,7 @@ from .exceptions import (
 )
 from .model_settings import ModelSettings
 from .run_context import RunContext, TContext
+from .tool import FunctionTool, function_tool
 from .usage import Usage
 
 __all__ = [
@@ -25,4 +26,6 @@ __all__ = [
     "ModelSettings",
     "RunContext",
     "TContext",
+    "FunctionTool",
+    "function_tool",
 ]
