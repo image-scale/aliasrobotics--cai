@@ -11,6 +11,7 @@ from .exceptions import (
     OutputGuardrailTriggered,
     UserError,
 )
+from .handoff import Handoff, HandoffInputData, HandoffInputFilter, handoff
 from .items import (
     HandoffCallItem,
     HandoffOutputItem,
@@ -48,4 +49,8 @@ __all__ = [
     "ModelResponse",
     "ItemHelpers",
     "RunItem",
+    "Handoff",
+    "HandoffInputData",
+    "HandoffInputFilter",
+    "handoff",
 ]
