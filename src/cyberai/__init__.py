@@ -11,6 +11,15 @@ from .exceptions import (
     OutputGuardrailTriggered,
     UserError,
 )
+from .guardrail import (
+    GuardrailFunctionOutput,
+    InputGuardrail,
+    InputGuardrailResult,
+    OutputGuardrail,
+    OutputGuardrailResult,
+    input_guardrail,
+    output_guardrail,
+)
 from .handoff import Handoff, HandoffInputData, HandoffInputFilter, handoff
 from .items import (
     HandoffCallItem,
@@ -53,4 +62,11 @@ __all__ = [
     "HandoffInputData",
     "HandoffInputFilter",
     "handoff",
+    "GuardrailFunctionOutput",
+    "InputGuardrail",
+    "InputGuardrailResult",
+    "OutputGuardrail",
+    "OutputGuardrailResult",
+    "input_guardrail",
+    "output_guardrail",
 ]
