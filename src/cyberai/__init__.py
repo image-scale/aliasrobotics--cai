@@ -10,6 +10,8 @@ from .exceptions import (
     OutputGuardrailTriggered,
     UserError,
 )
+from .model_settings import ModelSettings
+from .run_context import RunContext, TContext
 from .usage import Usage
 
 __all__ = [
@@ -20,4 +22,7 @@ __all__ = [
     "InputGuardrailTriggered",
     "OutputGuardrailTriggered",
     "Usage",
+    "ModelSettings",
+    "RunContext",
+    "TContext",
 ]
