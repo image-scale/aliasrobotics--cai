@@ -13,3 +13,10 @@
 **Commit**: Add model configuration settings and a run context wrapper for the agent framework
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 3
+**Task**: Task 3 — Function tool system
+**Files created**: src/cyberai/tool.py, tests/test_tool.py
+**Commit**: Add a function tool system that converts Python functions into LLM-callable tools
+**Acceptance**: 10/10 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

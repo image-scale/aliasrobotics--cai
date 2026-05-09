@@ -10,6 +10,16 @@ from .exceptions import (
     OutputGuardrailTriggered,
     UserError,
 )
+from .items import (
+    HandoffCallItem,
+    HandoffOutputItem,
+    ItemHelpers,
+    MessageItem,
+    ModelResponse,
+    RunItem,
+    ToolCallItem,
+    ToolCallOutputItem,
+)
 from .model_settings import ModelSettings
 from .run_context import RunContext, TContext
 from .tool import FunctionTool, function_tool
@@ -28,4 +38,12 @@ __all__ = [
     "TContext",
     "FunctionTool",
     "function_tool",
+    "MessageItem",
+    "ToolCallItem",
+    "ToolCallOutputItem",
+    "HandoffCallItem",
+    "HandoffOutputItem",
+    "ModelResponse",
+    "ItemHelpers",
+    "RunItem",
 ]

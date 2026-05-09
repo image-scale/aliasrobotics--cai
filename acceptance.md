@@ -25,13 +25,25 @@
 ## Task 3: Function tool system
 
 ### Acceptance Criteria
-- [ ] FunctionTool dataclass has name, description, params_json_schema, on_invoke_tool callback
-- [ ] function_tool decorator converts a Python function to a FunctionTool
-- [ ] JSON schema is generated from function type hints (int, str, float, bool, etc.)
-- [ ] Function description is extracted from docstring
-- [ ] Parameter descriptions are extracted from docstring (Google/Sphinx style)
-- [ ] Functions can take optional RunContext as first parameter
-- [ ] Tool invocation parses JSON arguments and calls the function
-- [ ] Invalid JSON raises ModelBehaviorError
-- [ ] Missing required arguments raises ModelBehaviorError
-- [ ] Both sync and async functions are supported
+- [x] FunctionTool dataclass has name, description, params_json_schema, on_invoke_tool callback
+- [x] function_tool decorator converts a Python function to a FunctionTool
+- [x] JSON schema is generated from function type hints (int, str, float, bool, etc.)
+- [x] Function description is extracted from docstring
+- [x] Parameter descriptions are extracted from docstring (Google/Sphinx style)
+- [x] Functions can take optional RunContext as first parameter
+- [x] Tool invocation parses JSON arguments and calls the function
+- [x] Invalid JSON raises ModelBehaviorError
+- [x] Missing required arguments raises ModelBehaviorError
+- [x] Both sync and async functions are supported
+
+## Task 4: Run items and model response types
+
+### Acceptance Criteria
+- [ ] MessageItem dataclass represents a text message from the model
+- [ ] ToolCallItem dataclass represents a tool call request with name, call_id, arguments
+- [ ] ToolCallOutputItem dataclass represents the output of a tool call
+- [ ] HandoffCallItem dataclass represents a handoff request
+- [ ] HandoffOutputItem dataclass represents a completed handoff with source/target agent
+- [ ] ModelResponse dataclass contains output items, usage, and optional referenceable_id
+- [ ] ItemHelpers class with helper methods for extracting text from items
+- [ ] Items can be converted to input format for subsequent model calls

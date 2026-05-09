@@ -6,8 +6,8 @@ Build the framework bottom-up starting with foundational types (exceptions, usag
 ## Tasks
 - [x] Task 1: Implement the core exceptions and usage tracking (exceptions for max turns exceeded, model behavior errors, guardrail violations + usage dataclass for token tracking)
 - [x] Task 2: Implement model settings and run context (model configuration parameters like temperature, tool_choice + context wrapper that carries state through agent runs)
-- [>] Task 3: Implement the function tool system (function_tool decorator that converts Python functions to LLM tools with JSON schema generation from type hints and docstrings)
-- [ ] Task 4: Implement run items and model response types (message items, tool call items, handoff items, model response wrapper with usage)
+- [x] Task 3: Implement the function tool system (function_tool decorator that converts Python functions to LLM tools with JSON schema generation from type hints and docstrings)
+- [>] Task 4: Implement run items and model response types (message items, tool call items, handoff items, model response wrapper with usage)
 - [ ] Task 5: Implement the Agent class (agent with name, instructions, tools, handoffs, guardrails, model settings, and system prompt generation)
 - [ ] Task 6: Implement the handoff system (handoff dataclass, handoff decorator for agent-to-agent delegation with input filtering)
 - [ ] Task 7: Implement input and output guardrails (guardrail decorators and classes for validating agent inputs/outputs with tripwire support)
