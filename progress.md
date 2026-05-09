@@ -20,3 +20,10 @@
 **Commit**: Add a function tool system that converts Python functions into LLM-callable tools
 **Acceptance**: 10/10 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 4
+**Task**: Task 4 — Run items and model response types
+**Files created**: src/cyberai/items.py, tests/test_items.py
+**Commit**: Add run item types and model response handling for tracking agent execution
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

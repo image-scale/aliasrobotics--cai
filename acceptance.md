@@ -39,11 +39,22 @@
 ## Task 4: Run items and model response types
 
 ### Acceptance Criteria
-- [ ] MessageItem dataclass represents a text message from the model
-- [ ] ToolCallItem dataclass represents a tool call request with name, call_id, arguments
-- [ ] ToolCallOutputItem dataclass represents the output of a tool call
-- [ ] HandoffCallItem dataclass represents a handoff request
-- [ ] HandoffOutputItem dataclass represents a completed handoff with source/target agent
-- [ ] ModelResponse dataclass contains output items, usage, and optional referenceable_id
-- [ ] ItemHelpers class with helper methods for extracting text from items
-- [ ] Items can be converted to input format for subsequent model calls
+- [x] MessageItem dataclass represents a text message from the model
+- [x] ToolCallItem dataclass represents a tool call request with name, call_id, arguments
+- [x] ToolCallOutputItem dataclass represents the output of a tool call
+- [x] HandoffCallItem dataclass represents a handoff request
+- [x] HandoffOutputItem dataclass represents a completed handoff with source/target agent
+- [x] ModelResponse dataclass contains output items, usage, and optional referenceable_id
+- [x] ItemHelpers class with helper methods for extracting text from items
+- [x] Items can be converted to input format for subsequent model calls
+
+## Task 5: Agent class
+
+### Acceptance Criteria
+- [ ] Agent dataclass with name (required) and optional instructions (string or callable)
+- [ ] Agent has description and handoff_description fields
+- [ ] Agent has tools list, handoffs list, model, and model_settings fields
+- [ ] Agent has input_guardrails and output_guardrails lists
+- [ ] Agent.get_system_prompt() returns instructions (supports both str and async callable)
+- [ ] Agent.clone() creates a copy with optional field overrides
+- [ ] Agent.get_all_tools() returns all tools including function tools

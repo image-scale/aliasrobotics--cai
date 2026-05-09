@@ -2,6 +2,7 @@
 CyberAI - A framework for building AI-powered cybersecurity agents.
 """
 
+from .agent import Agent
 from .exceptions import (
     AgentsError,
     InputGuardrailTriggered,
@@ -26,6 +27,7 @@ from .tool import FunctionTool, function_tool
 from .usage import Usage
 
 __all__ = [
+    "Agent",
     "AgentsError",
     "MaxTurnsExceeded",
     "ModelBehaviorError",
